@@ -1,0 +1,16 @@
+{
+  "name": "wastebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lixoplatform/wastebase-ayoba-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
