@@ -1,0 +1,98 @@
+<!--basic ayoba microapp with js, css and logging to the page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <h1>ayoba microapp boilerplate</h1>
+    <h2>Source code: https://github.com/simfy-africa/ayoba-microapp-boilerplate</h2>
+    <div id="log-container" hidden>
+        <pre id="logger"></pre>
+    </div>
+    <button id="btn_copy">Copy to clipboard</button>
+    <br /><br />
+    <div>
+        <input type="button" value="Get MSISDN" onClick="getMsisdn()" />
+        MSISDN: <span type="text" id="msisdnText"></span>
+    </div>
+
+    <div>
+        <input type="button" value="Get CanSendMessage" onClick="getCanSendMessage()" />
+        Can send messages: <span type="text" id="cansendText"></span>
+    </div>
+
+    <div>
+        <input type="button" value="Get Language" onClick="getLanguage()" />
+        Language: <span type="text" id="languageText"></span>
+    </div>
+    <div>
+        <input type="button" value="Get SelfJid" onClick="getSelfJid()" />
+        JID: <span type="text" id="selfjidText"></span>
+    </div>
+    <div>
+        <input type="button" value="Get Country" onClick="getCountry()" />
+        Location: <span type="text" id="countryText"></span>
+    </div>
+    <div>
+        Profile:
+        <span type="text" id="nicknameInputText"></span>
+    </div>
+    <div>
+        Presence:
+        <span type="text" id="presenceInputText"></span>
+    </div>
+    <div>
+        <input type="button" value="takePicture" onClick="takePicture()" />
+    </div>
+
+    <img id="avatarImage" />
+
+    <img id="pictureRetrieved" />
+    <div>
+        <input type="button" value="Finish" onClick="finish()" />
+    </div>
+    <div id="chatContext" hidden>
+        <div>
+            Message text: <input type="text" id="inputText" />
+            <input type="button" value="Send message" onClick="sendMessage()" />
+            <input type="button" value="Compose message" onClick="composeMessage()" />
+        </div>
+        <div>
+            <input type="button" value="Send media" onClick="sendMedia()" />
+        </div>
+        <div>
+            Lat: <input type="text" id="inputTextLat" size="10">
+            Lon: <input type="text" id="inputTextLon" size="10">
+            <input type="button" value="Send location" onClick="sendLocation()" />
+        </div>
+
+        <div>
+            <input type="button" value="Get ContactJid" onClick="getContactJid()" />
+        </div>
+        <div>
+            <input type="button" value="Get ContactName" onClick="getContactName()" />
+        </div>
+
+        <div>
+            <input type="button" value="Get Contacts" onClick="getContacts()" />
+        </div>
+        <div>
+            <input type="button" value="Get Last Text Messages" onClick="getLastTextMessages()" />
+        </div>
+        <div>
+            <input type="button" value="startConversation" onClick="startConversation()" />
+        </div>
+        <div>
+            <input type="button" value="getFile" onClick="getFile()" />
+        </div>
+    </div>
+    <script type="text/javascript" src="js/ayobastub.js"></script>
+    <script type="text/javascript" src="js/microapp.js"></script>
+</body>
+
+</html>
